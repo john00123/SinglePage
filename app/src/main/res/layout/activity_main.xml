@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary"
+    android:paddingTop="30dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Bang &amp; Olufsen Stores"
+        android:textColor="#000"
+        android:layout_marginLeft="25dp"
+        android:textSize="24sp"
+        />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        >
+
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="3dp"
+                card_view:cardCornerRadius="3dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bo"/>
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_above="@id/address"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BURLINGAME"
+                        android:textColor="#fff"
+                        android:paddingBottom="8dp"
+                        android:textSize="26sp" />
+
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1301 Burlingame Ave.\n94010 Burlingame"
+                        android:textColor="#fff"
+                        android:lineSpacingMultiplier="1.2"
+                        android:layout_marginBottom="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="3dp"
+                card_view:cardCornerRadius="3dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bo2"/>
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_above="@id/address"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SAN JOSE"
+                        android:textColor="#000"
+                        android:paddingBottom="8dp"
+                        android:textSize="26sp" />
+
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="181 Curtner Ave, \n95125-1014, San Jose"
+                        android:textColor="#000"
+                        android:lineSpacingMultiplier="1.2"
+                        android:layout_marginBottom="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="3dp"
+                card_view:cardCornerRadius="3dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bo3" />
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_above="@id/address"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PALO ALTO"
+                        android:textColor="#fff"
+                        android:paddingBottom="8dp"
+                        android:textSize="26sp" />
+
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="451 University Avenue \n94301 Palo Alto"
+                        android:textColor="#fff"
+                        android:lineSpacingMultiplier="1.2"
+                        android:layout_marginBottom="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>
